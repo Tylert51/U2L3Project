@@ -34,8 +34,8 @@ public class Student {
     }
 
 
-//method for comparing students tests scores, third parameter takes a number as which student do you
-// think is better and reports the boolean value accordingly
+    //method for comparing students tests scores, second parameter you enter the student who you think is better
+    // and the code outputs if you are right or wrong (false or true)
     public void compareToStudent(Student student2, Student whichStudentBetter) {
         boolean student2Greater;
         boolean student1Greater;
