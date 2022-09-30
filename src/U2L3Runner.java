@@ -1,18 +1,18 @@
 public class U2L3Runner {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.addPlayer();
-        game.addPlayer();
-        game.addPlayer();
-        game.addPlayer();
+        Student student1 = new Student("Tyler", "Tang",2024);
+        student1.addTestScore(100);
+        student1.addTestScore(50);
+        student1.printStudentInfo();
+        System.out.println();
 
-        game.increaseScore(8);
-        game.increaseScore(3);
-        game.increaseScore(15);
+        Student student2 = new Student("John","Doe",2024);
+        student2.addTestScore(80);
+        student2.addTestScore(60);
+        student2.printStudentInfo();
+        System.out.println();
 
-        System.out.println("Players: " +  game.getPlayers());
-        System.out.println("Score: " + game.getScore());
-        System.out.println("Avg score per player: " + game.averageScorePerPlayer());
+        student1.compareStudents(student1,student2,1);
 
 
 
