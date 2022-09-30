@@ -36,28 +36,29 @@ public class Student {
 
 //method for comparing students tests scores, third parameter takes a number as which student do you
 // think is better and reports the boolean value accordingly
-    public void compareStudents(Student student1, Student student2, int whichStudentBetter) {
+    public void compareToStudent(Student student2, Student whichStudentBetter) {
         boolean student2Greater;
         boolean student1Greater;
-        if (student1.averageTestScore() > student2.averageTestScore()) {
+        if (averageTestScore() > student2.averageTestScore()) {
             student1Greater = true;
             student2Greater = false;
         } else {
             student1Greater = false;
             student2Greater = true;
         }
-        if (whichStudentBetter == 1) {
-            System.out.println(student1Greater);
-        }else{
+        if (whichStudentBetter == student2) {
             System.out.println(student2Greater);
+        }else{
+            System.out.println(student1Greater);
         }
     }
 
 
     public void printStudentInfo() {
-        System.out.println("Student Name: " + firstName);
+        System.out.println("Student Name: " + firstName + " " + lastName);
         System.out.println("Graduation Year: " + gradYear);
         System.out.println("Average Test Scores: " + averageTestScore());
         System.out.println("Number of Tests averaged: " + testScoreCount);
+        System.out.println();
     }
 }
