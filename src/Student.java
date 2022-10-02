@@ -14,6 +14,7 @@ public class Student {
         this.lastName = lastName;
         this.gradYear = gradYear;
         testScoreCount = 0;
+        accumulatedTestScores = 0.0;
     }
 
     public void updateGradYear(int newGradYear) {

@@ -23,12 +23,12 @@ public class Game
 
     public void addPlayer()
     {
-        players += 1;
+        players++;
     }
 
     public int increaseScore(int increase)
     {
-      score = score + increase;
+      score += increase;
       return score;
     }
 
