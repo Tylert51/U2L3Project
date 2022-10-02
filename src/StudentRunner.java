@@ -1,4 +1,4 @@
-public class U2L3Runner {
+public class StudentRunner {
     public static void main(String[] args) {
         Student tyler = new Student("Tyler", "Tang",2024);
         tyler.addTestScore(100);
@@ -17,8 +17,6 @@ public class U2L3Runner {
 
 
         jake.compareToStudent(tyler, jake);
-
-
 
     }
 }
